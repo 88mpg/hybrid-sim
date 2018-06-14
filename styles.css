@@ -1,0 +1,139 @@
+body {
+  font-family: 'Helvetica Neue', Helvetica, sans-serif; }
+  @media only screen and (max-width: 768px) {
+    body {
+      font-size: 13px; } }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+a {
+  color: black; }
+
+h1 {
+  background-color: gold;
+  margin: 0;
+  padding: 0 20px;
+  line-height: 60px;
+  text-transform: uppercase;
+  font-size: 22px;
+  letter-spacing: 1px; }
+  @media only screen and (max-width: 768px) {
+    h1 {
+      font-size: 14px;
+      line-height: normal;
+      padding: 20px 20px 0 20px;
+      text-align: center; } }
+
+main {
+  display: flex;
+  height: calc(100vh - 60px); }
+  @media only screen and (max-width: 768px) {
+    main {
+      flex-direction: column;
+      height: auto; } }
+  main .controls {
+    background-color: gold;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 12px; }
+    @media only screen and (max-width: 768px) {
+      main .controls {
+        padding-top: 10px;
+        padding-bottom: 10px; } }
+    main .controls > * {
+      width: 100%; }
+    main .controls .colophon {
+      font-size: 9px;
+      margin-top: auto;
+      text-align: center; }
+      main .controls .colophon span {
+        color: #ff3814; }
+  main .hundoSlider,
+  main .fortySlider,
+  main .hundoCount {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px; }
+    main .hundoSlider input,
+    main .hundoSlider select,
+    main .fortySlider input,
+    main .fortySlider select,
+    main .hundoCount input,
+    main .hundoCount select {
+      width: 100%; }
+  main form {
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    text-align: center; }
+    main form label {
+      margin-bottom: 5px; }
+  main button {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    appearance: none;
+    border: 0;
+    border-radius: 50px;
+    padding: 25px 10px;
+    margin: 10px 0;
+    width: 100%;
+    background-color: #ff3814;
+    color: white;
+    transition: background-color 150ms ease;
+    cursor: pointer; }
+    main button:active, main button:focus {
+      outline: 0; }
+    main button:hover {
+      background-color: #fa2600; }
+  main .totalAverage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 0; }
+    main .totalAverage span {
+      padding-left: 10px;
+      font-weight: bold;
+      font-size: 24px; }
+  main .gameResults {
+    width: 100%;
+    font-size: 16px;
+    overflow-y: auto; }
+    @media only screen and (max-width: 768px) {
+      main .gameResults {
+        font-size: 13px; } }
+    main .gameResults .gameResultsScore div,
+    main .gameResults .header {
+      padding: 15px 0;
+      display: flex;
+      justify-content: space-around;
+      font-weight: bold; }
+      main .gameResults .gameResultsScore div span,
+      main .gameResults .header span {
+        flex: 1;
+        text-align: center; }
+        main .gameResults .gameResultsScore div span:last-of-type,
+        main .gameResults .header span:last-of-type {
+          flex: 2; }
+    main .gameResults .header {
+      font-size: 12px;
+      font-weight: bold;
+      background-color: #ff3814;
+      color: white;
+      text-transform: uppercase;
+      letter-spacing: 1px; }
+    main .gameResults .gameResultsScore div:nth-of-type(even) {
+      background-color: #ffeb80; }
